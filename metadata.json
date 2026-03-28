@@ -1,0 +1,7 @@
+{
+  "name": "分形之境：自然美学的数学奥秘",
+  "description": "探索分形几何与自然的深刻联系，结合AI洞察揭示数学之美。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
