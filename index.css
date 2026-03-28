@@ -1,0 +1,51 @@
+/* Custom styles */
+:root {
+    --bg-primary: #f8fafc;
+    --accent-primary: #3b82f6;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: var(--bg-primary);
+    color: #1e293b;
+    overflow-x: hidden;
+}
+
+.special-font {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.glass-light {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.text-gradient-bright {
+    background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-soft {
+    background: radial-gradient(circle at 0% 0%, #eff6ff 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, #f5f3ff 0%, transparent 50%);
+}
+
+.drag-cursor {
+    cursor: grab;
+}
+
+.drag-cursor:active {
+    cursor: grabbing;
+}
+
+@keyframes subtle-pulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-subtle {
+    animation: subtle-pulse 5s ease-in-out infinite;
+}
